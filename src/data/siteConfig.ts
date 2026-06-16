@@ -1,24 +1,21 @@
-import { assetPath } from "../lib/assets";
-import type { ThemeId } from "./themes";
-
 export const siteConfig = {
-  siteTitle: "Manuel Garnica | Portfolio",
-  seoDescription:
-    "Personal portfolio for Manuel Garnica, Applied Computing and Data Visualization student at University of Washington Bothell.",
-  copyrightYear: 2026,
-  brand: {
-    initials: "MG",
-    name: "Manuel Garnica",
-    logoText: "MG",
+  "siteTitle": "James | Student Portfolio",
+  "seoDescription": "James is preparing a FolioDev student portfolio draft.",
+  "copyrightYear": 2026,
+  "brand": {
+    "initials": "JC",
+    "name": "James Chen",
+    "logoText": "JC"
   },
-  theme: {
-    activeTheme: "midnight-blue" satisfies ThemeId,
-    name: "Dark navy / electric blue",
-    sectionLabelStyle: "uppercase blue text",
+  "theme": {
+    "activeTheme": "midnight-blue",
+    "name": "Midnight Blue",
+    "sectionLabelStyle": "uppercase blue text"
   },
-  resume: {
-    label: "Resume",
-    path: assetPath("assets/resume/Manuel_Garnica_Resume.docx"),
-    download: true,
+  "resume": {
+    "label": "Resume",
+    "path": "",
+    "download": false
   },
-};
+  "recruiterScanModeEnabled": false
+} as const;

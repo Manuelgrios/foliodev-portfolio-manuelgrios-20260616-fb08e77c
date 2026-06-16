@@ -1,6 +1,3 @@
-import { education } from "./education";
-import { siteConfig } from "./siteConfig";
-
 export type CtaLink = {
   label: string;
   href: string;
@@ -24,137 +21,121 @@ export type Profile = {
     body: string;
     primaryCta: CtaLink;
     secondaryCta: CtaLink;
-    image: {
-      src: string;
-      alt: string;
-    };
+    image: { src: string; alt: string };
   };
   sections: {
-    about: {
-      eyebrow: string;
-      heading: string;
-      body: string[];
-      infoGroups: Array<{
-        iconKey: "education" | "code" | "chart";
-        label: string;
-        lines: string[];
-      }>;
-      enjoyHeading: string;
-      enjoyItems: string[];
-    };
-    projects: {
-      eyebrow: string;
-      heading: string;
-      indexHeading: string;
-      description: string;
-      viewAllLabel: string;
-    };
-    experience: {
-      eyebrow: string;
-      heading: string;
-    };
-    skills: {
-      eyebrow: string;
-      heading: string;
-      description?: string;
-    };
-    contact: {
-      eyebrow: string;
-      heading: string;
-      pageHeading: string;
-      body: string;
-    };
+    about: { eyebrow: string; heading: string; body: string[]; infoGroups: Array<{ iconKey: "education" | "code" | "chart"; label: string; lines: string[] }>; enjoyHeading: string; enjoyItems: string[] };
+    projects: { eyebrow: string; heading: string; indexHeading: string; description: string; viewAllLabel: string };
+    experience: { eyebrow: string; heading: string };
+    skills: { eyebrow: string; heading: string; description?: string };
+    contact: { eyebrow: string; heading: string; pageHeading: string; body: string };
   };
 };
 
-const school = "University of Washington Bothell";
-const degrees = education.map((item) => item.degree);
-
 export const profile: Profile = {
-  name: siteConfig.brand.name,
-  headline: "Aspiring Full-Stack Software Engineer.",
-  subtitle: "Applied Computing and Data Visualization Student",
-  school,
-  degrees,
-  location: "Seattle, Washington",
-  email: "manuelgarios@outlook.com",
-  bio:
-    "I'm an aspiring software engineer based in Washington with an academic background in Applied Computing and Data Visualization at the University of Washington Bothell. My work focuses on building small but useful software tools, debugging systems, automating workflows, and using data visualization to make technical information easier to understand.",
-  shortBio:
-    "I'm an Applied Computing and Data Visualization student at the University of Washington Bothell. I build software tools, debug systems, automate workflows, and use visual explanations to make technical problems easier to understand.",
-  focusAreas: [
-    "Software engineering",
-    "Data visualization",
-    "Tools and automation",
-    "Debugging",
+  "name": "James Chen",
+  "headline": "Data Analyst portfolio",
+  "subtitle": "Data Visualization at University of Washington Bothell",
+  "school": "University of Washington Bothell",
+  "degrees": [
+    "B.A."
   ],
-  hero: {
-    eyebrow: "Applied Computing + Data Visualization Student",
-    headline: ["Data Science Analyst,", "Software Developer,"],
-    highlightedHeadline: "Computer Science",
-    body:
-      "I'm an Applied Computing and Data Visualization student at the University of Washington Bothell. I build software tools, debug systems, automate workflows, and use visual explanations to make technical problems easier to understand.",
-    primaryCta: { label: "View Projects", href: "/#projects" },
-    secondaryCta: { label: "Contact Me", href: "/#contact" },
-    image: {
-      src: "assets/headshot.png",
-      alt: "Professional headshot of Manuel Garnica",
+  "location": "Seattle, Washington, United States",
+  "email": "james.chen8668@gmail.com",
+  "bio": "Data Visualization student at UW Bothell focused on data analytics and visual reporting.\n\nBased in Seattle, Washington, James is a Data Visualization student at UW Bothell focused on data cleaning, visual reporting, and data analysis.",
+  "shortBio": "Data Visualization student at UW Bothell focused on data analytics and visual reporting.",
+  "focusAreas": [
+    "Alumni data analysis",
+    "Data cleaning",
+    "Visual reporting",
+    "Excel and Tableau reporting",
+    "CRM and fundraising data systems"
+  ],
+  "hero": {
+    "eyebrow": "Data Visualization · UW Bothell",
+    "headline": [
+      "Data Analyst"
+    ],
+    "highlightedHeadline": "Data Visualization Analyst",
+    "body": "Data Visualization student at UW Bothell focused on data analytics and visual reporting.",
+    "primaryCta": {
+      "label": "View Skills",
+      "href": "/#skills"
     },
+    "secondaryCta": {
+      "label": "Contact Me",
+      "href": "/#contact"
+    },
+    "image": {
+      "src": "",
+      "alt": ""
+    }
   },
-  sections: {
-    about: {
-      eyebrow: "About Me",
-      heading: "Hi there, my name is Manuel.",
-      body: [
-        "I'm an aspiring software engineer based in Washington with an academic background in Applied Computing and Data Visualization at the University of Washington Bothell. My work focuses on software tools, debugging, automation, and data visualization, with projects that help me practice writing cleaner code, testing edge cases, and explaining technical decisions clearly.",
+  "sections": {
+    "about": {
+      "eyebrow": "About Me",
+      "heading": "Hi there, my name is James.",
+      "body": [
+        "Based in Seattle, Washington, James is a Data Visualization student at UW Bothell focused on data cleaning, visual reporting, and data analysis.",
+        "Based in Seattle, Washington, at UW Bothell Advancement, James analyzed 10,000+ alumni records to identify employer engagement opportunities and assess fundraising performance. Tools: Microsoft Dynamics, Excel, Python, Tableau Analyzed 10,000+ alumni records to identify employer engagement"
       ],
-      infoGroups: [
+      "infoGroups": [
         {
-          iconKey: "education",
-          label: "Education",
-          lines: degrees,
+          "iconKey": "education",
+          "label": "Education",
+          "lines": [
+            "B.A. Data Visualization",
+            "UW Bothell · Expected 2026"
+          ]
         },
         {
-          iconKey: "code",
-          label: "Technical Focus",
-          lines: ["Software Engineering", "Automation & Debugging"],
+          "iconKey": "code",
+          "label": "Role Focus",
+          "lines": [
+            "Data Analyst",
+            "Data Visualization Analyst"
+          ]
         },
         {
-          iconKey: "chart",
-          label: "Data Focus",
-          lines: ["Data Visualization", "Clear Technical Communication"],
-        },
+          "iconKey": "chart",
+          "label": "Experience Focus",
+          "lines": [
+            "Data Analyst Intern",
+            "UW Bothell Advancement",
+            "10,000+ alumni records"
+          ]
+        }
       ],
-      enjoyHeading: "What I focus on",
-      enjoyItems: [
-        "Debugging problems until the cause is clear",
-        "Building tools that reduce repeated manual work",
-        "Writing code that is easier to test and update",
-        "Explaining technical work through clear visuals and documentation",
-      ],
+      "enjoyHeading": "What I focus on",
+      "enjoyItems": [
+        "Alumni data analysis",
+        "Data cleaning",
+        "Visual reporting",
+        "Excel and Tableau reporting",
+        "CRM and fundraising data systems"
+      ]
     },
-    projects: {
-      eyebrow: "Projects",
-      heading: "Things I've Built",
-      indexHeading: "Project index",
-      description:
-        "Selected projects focused on software tools, automation, debugging, data structures, and data visualization.",
-      viewAllLabel: "View All Projects",
+    "projects": {
+      "eyebrow": "Projects",
+      "heading": "Things I've Built",
+      "indexHeading": "Project index",
+      "description": "Selected real projects focused on technical decisions, outcomes, and practical experience.",
+      "viewAllLabel": "View All Projects"
     },
-    experience: {
-      eyebrow: "Experience",
-      heading: "Where I've Worked",
+    "experience": {
+      "eyebrow": "Experience",
+      "heading": "Where I've Worked"
     },
-    skills: {
-      eyebrow: "Skills",
-      heading: "Technologies I Work With",
+    "skills": {
+      "eyebrow": "Skills",
+      "heading": "Skills I Work With",
+      "description": "Source-backed skills and tools grouped by the work they support."
     },
-    contact: {
-      eyebrow: "Contact",
-      heading: "Let's Connect",
-      pageHeading: "Get in touch",
-      body:
-        "I'm open to internships, project collaboration, and technical work involving software tools, automation, debugging, or data visualization.",
-    },
-  },
+    "contact": {
+      "eyebrow": "Contact",
+      "heading": "Let's Connect",
+      "pageHeading": "Get in touch",
+      "body": "Open to Data Analyst, Data Visualization Analyst opportunities."
+    }
+  }
 };

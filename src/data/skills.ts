@@ -12,50 +12,60 @@ export type SkillItem = {
 
 export const skillCategories: SkillCategory[] = [
   {
-    category: "Languages",
-    items: [
-      { name: "Python", shortLabel: "Py", category: "Languages" },
-      { name: "JavaScript", shortLabel: "JS", category: "Languages" },
-      { name: "TypeScript", shortLabel: "TS", category: "Languages" },
-      { name: "C++", shortLabel: "C++", category: "Languages" },
-      { name: "C#", shortLabel: "C#", category: "Languages" },
-    ],
-  },
-  {
-    category: "Frontend",
-    items: [
-      { name: "React", shortLabel: "React", category: "Frontend" },
-      { name: "HTML/CSS", shortLabel: "</>", category: "Frontend" },
-    ],
-  },
-  {
-    category: "Tools and Frameworks",
-    items: [
-      { name: "Flask", shortLabel: "Fl", category: "Tools and Frameworks" },
-      { name: "Git", shortLabel: "Git", category: "Tools and Frameworks" },
+    "category": "Data & Reporting",
+    "items": [
       {
-        name: "GitHub Actions",
-        shortLabel: "GA",
-        category: "Tools and Frameworks",
-      },
-      { name: "Unity", shortLabel: "U", category: "Tools and Frameworks" },
-    ],
+        "name": "Excel",
+        "shortLabel": "Excel",
+        "category": "Data & Reporting"
+      }
+    ]
   },
   {
-    category: "Data and Analysis",
-    items: [
+    "category": "Data & Analytics",
+    "items": [
       {
-        name: "Data Visualization",
-        shortLabel: "Viz",
-        category: "Data and Analysis",
+        "name": "Data Analysis",
+        "shortLabel": "Data Analysis",
+        "category": "Data & Analytics"
       },
-      { name: "Pandas", shortLabel: "Pd", category: "Data and Analysis" },
-      { name: "Matplotlib", shortLabel: "Mpl", category: "Data and Analysis" },
-      { name: "Debugging", shortLabel: "Debug", category: "Data and Analysis" },
-    ],
+      {
+        "name": "Data Visualization",
+        "shortLabel": "Data Visualization",
+        "category": "Data & Analytics"
+      },
+      {
+        "name": "Data Cleaning",
+        "shortLabel": "Data Cleaning",
+        "category": "Data & Analytics"
+      },
+      {
+        "name": "Tableau",
+        "shortLabel": "Tableau",
+        "category": "Data & Analytics"
+      }
+    ]
   },
+  {
+    "category": "Business & Operations",
+    "items": [
+      {
+        "name": "Microsoft Dynamics",
+        "shortLabel": "Microsoft Dynamics",
+        "category": "Business & Operations"
+      }
+    ]
+  },
+  {
+    "category": "Programming & Data Tools",
+    "items": [
+      {
+        "name": "Python",
+        "shortLabel": "Python",
+        "category": "Programming & Data Tools"
+      }
+    ]
+  }
 ];
 
-export const skillItems: SkillItem[] = skillCategories.flatMap(
-  (category) => category.items,
-);
+export const skillItems: SkillItem[] = skillCategories.flatMap((category) => category.items);

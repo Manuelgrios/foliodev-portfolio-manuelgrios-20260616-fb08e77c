@@ -7,11 +7,9 @@ export type EducationItem = {
 
 export const education: EducationItem[] = [
   {
-    school: "University of Washington Bothell",
-    degree: "Bachelor of Arts in Applied Computing",
-  },
-  {
-    school: "University of Washington Bothell",
-    degree: "Bachelor of Science in Data Visualization",
-  },
+    "school": "University of Washington Bothell",
+    "degree": "B.A. in Data Visualization",
+    "timeline": "Expected 2026",
+    "details": []
+  }
 ];
